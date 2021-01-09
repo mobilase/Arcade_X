@@ -184,7 +184,7 @@ public class PlayerScript : MonoBehaviour
 			LaserBullet_BoxCollider2D = LaserBullet_Gameobject.AddComponent<BoxCollider2D>(); 
 			LaserBullet_BoxCollider2D.isTrigger = true;
 			LaserBullet_rigidBody2D = LaserBullet_Gameobject.AddComponent<Rigidbody2D>();
-			LaserBullet_Gameobject.AddComponent("LaserScript");
+			LaserBullet_Gameobject.AddComponent<LaserScript>();
 			LaserBullet_rigidBody2D.gravityScale = 0;
 			LaserBullet_rigidBody2D.isKinematic = true;
 		}
